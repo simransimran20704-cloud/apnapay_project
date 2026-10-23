@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #F8F6F0;
+    color: #3D322A;
+    overflow-x: hidden;
+  }
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+}
+
+/* Custom Earthy Tone Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F0EAD2;
+}
+::-webkit-scrollbar-thumb {
+  background: #C7BA9F;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A98467;
+}
+
+/* Earthy Shades Theme Variables & Utilities */
+:root {
+  --earth-cream: #F0EAD2;
+  --earth-sage: #DDE5B6;
+  --earth-moss: #ADC178;
+  --earth-clay: #A98467;
+  --earth-espresso: #6C584C;
+}
+
+.card-earth {
+  background-color: #FFFFFF;
+  border: 1px solid #E6DEC9;
+  box-shadow: 0 1px 3px 0 rgba(108, 88, 76, 0.05);
+}
+
+.badge-sage {
+  background-color: #DDE5B6;
+  color: #4A5626;
+}
+
+.badge-moss {
+  background-color: #ADC178;
+  color: #FFFFFF;
+}
+
+.badge-clay {
+  background-color: #A98467;
+  color: #FFFFFF;
+}
+
+.badge-espresso {
+  background-color: #6C584C;
+  color: #F0EAD2;
+}
+
+/* Accessibility Font Scaling */
+html[data-font="sm"] { font-size: 14px; }
+html[data-font="md"] { font-size: 16px; }
+html[data-font="lg"] { font-size: 18px; }
+html[data-font="xl"] { font-size: 20px; }
+
+/* Earthy Tones Deep Espresso Dark Mode */
+html.dark body {
+  background-color: #241D17;
+  color: #F0EAD2;
+}
+html.dark .bg-\[\#FAF8F3\] {
+  background-color: #2B221B !important;
+}
+html.dark .bg-\[\#F8F6F0\] {
+  background-color: #241D17 !important;
+}
+html.dark .bg-white {
+  background-color: #332820 !important;
+}
+html.dark .border-\[\#E5DDCB\],
+html.dark .border-\[\#E5DEC9\],
+html.dark .border-\[\#E0D5BE\] {
+  border-color: #4A3A2F !important;
+}
+html.dark .text-\[\#4A3B32\],
+html.dark .text-\[\#3D322A\],
+html.dark .text-\[\#2B221B\] {
+  color: #F0EAD2 !important;
+}
+html.dark .text-\[\#8C7464\],
+html.dark .text-\[\#6C584C\] {
+  color: #DDE5B6 !important;
+}
+

@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: api-gateway
+
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+      routes:
+
+        - id: auth-service
+          uri: http://127.0.0.1:8081
+          predicates:
+            - Path=/auth/**
+
+        - id: customer-service
+          uri: http://127.0.0.1:8082
+          predicates:
+            - Path=/customer/**
+
+        - id: transaction-service
+          uri: http://127.0.0.1:8083
+          predicates:
+            - Path=/transaction/**
+
+server:
+  port: 8080

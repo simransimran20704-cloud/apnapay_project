@@ -1,0 +1,37 @@
+# Junction aliases (source files are in PayEase/)
+/api-gateway
+/auth-service
+
+# Maven Build Output
+**/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+
+# Node & Frontend Build Output
+**/node_modules/
+**/dist/
+**/.vite/
+frontend/.env.local
+
+# IDE & Editor Configurations
+.idea/
+**/.idea/
+.vscode/
+**/.vscode/
+*.iml
+
+# Local Databases & Backups
+**/backups/*.sql
+customer-service/data/
+
+# OS System Files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Log Files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
